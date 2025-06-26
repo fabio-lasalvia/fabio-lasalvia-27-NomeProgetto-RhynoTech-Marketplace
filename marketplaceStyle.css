@@ -1,0 +1,153 @@
+/*****************/
+/***** BASE *****/
+/***************/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/*****************************/
+/*****TESTO SEZIONE HERO*****/
+/***************************/
+.hero-text h1 {
+  font-size: 8vw;
+}
+
+.hero-text p {
+  font-size: 4vw;
+}
+
+/* schermi piccoli (≤ 400px) */
+@media (max-width: 400px) {
+  .hero-text h1 {
+    font-size: 7vw;
+  }
+
+  .hero-text p {
+    font-size: 3.5vw;
+  }
+
+  .btn-hero {
+    padding: 0.3rem 0.8rem;
+    font-size: 3.5vw;
+  }
+}
+
+/* schermi medi e grandi */
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+
+  .btn-hero {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+/*****************/
+/***** CARD *****/
+/***************/
+.cardProduct {
+  height: 500px;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cardProduct:hover {
+  transform: scale(1.02);
+}
+
+/*********************/
+/***** IMG CARD *****/
+/*******************/
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/************************/
+/***** TITOLO CARD *****/
+/**********************/
+.card-title {
+  height: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/***********************/
+/***** TESTO CARD *****/
+/*********************/
+.card-text {
+  height: 4.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+    height: auto;
+    white-space: normal;
+  }
+
+  .card-text {
+    height: auto;
+    white-space: normal;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+}
+
+/*****************/
+/***** TABLE *****/
+/***************/
+table {
+  table-layout: fixed;
+}
+
+th,
+td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* schermi piccoli (≤ 400px) */
+@media (max-width: 400px) {
+  th,
+  td {
+    font-size: 0.75rem;
+    padding: 0.25rem;
+  }
+
+  table {
+    font-size: 0.75rem;
+  }
+}
